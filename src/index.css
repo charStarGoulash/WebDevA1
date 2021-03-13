@@ -1,13 +1,98 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, montserrat;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+    background-color: salmon;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    text-align: center;
+}
+
+header input {
+    display: inline-block;
+    color: white;
+    font-size: 45;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: uppercase;
+    background: white;
+    outline: black;
+    border: black;
+    color: black;
+    appearance: none;
+}
+
+header::before{
+    font-size: 45;
+    font-weight: 600;
+    font-style: italic;
+}
+.articles article {
+    padding: 30px 15px;
+    background-color: white;
+}
+
+.articles article a {
+    text-decoration: none;
+}
+
+.articles article h3 {
+    color: black
+}
+
+.articles article p {
+    color: red;
+    font-size: 45;
+    font-weight: 600;
+    font-style: italic;
+}
+.articles article:nth-child(2n){
+    background-color: white;
+}
+
+.articles article:hover {
+    background-color: cyan;
+}
+
+a.button1 {
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid black;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color: black;
+    text-align:center;
+    background-color: salmon;
+    transition: all 0.2s;
+}
+
+a.button1:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+}
+
+@media all and (max-width:30em){
+ a.button1{
+    display:block;
+    margin:0.4em auto;}
+}
+
+.disp {
+    display:inline-block;
+}
+
+.pos {
+    padding-right: 30px;
+}
+
+.pos2 {
+    float: left;
 }
